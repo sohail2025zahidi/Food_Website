@@ -6,7 +6,7 @@ body{
     margin: 0;
     font-family: sans-serif;
     min-height: 100vh;
-    background-color: #5D5D5D;
+    background-color: #5a3225;
 }
 
 /*title box*/
@@ -21,12 +21,15 @@ body{
 
 /* Yummy food title */
 .main-title {
-     color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     text-align: center;
     font-size: 80px;
-    background-color: #B03061;
+    background-color: #A04F34;
     border-radius: 31.5px;
-    border: 2px solid #6E1E3D;
+    border: 2px solid #683322;
+    padding: 10px 50px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 /* The sidebar menu */
 
@@ -38,13 +41,15 @@ body{
     border-left: 5px solid #9F6126;
     border-bottom: 5px solid #9F6126;
     box-sizing: border-box;
+    grid-column: 1;
+    grid-row: 2;
     
 }
 /* The navigation menu links */
 .sidenav a {
-    background-color: #B03061;
+    background-color: #A04F34;
     border-radius: 31.5px;
-    border: 2px solid #6E1E3D;
+    border: 2px solid #683322;
     text-align: center;
     padding: 12px 20px;
     text-decoration: none;
@@ -60,9 +65,44 @@ body{
     background-color:  #F3E7B7;
     border: 2px solid #B5AD8C;
 }
+
+.sidenav a:focus {
+    color:#000000;
+    background-color:  #F3E7B7;
+    border: 2px solid #B5AD8C;
+}
 /* Style page content */
 .main{
     padding: 0px 10px;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.recipe-row{
+    display: flex;
+}
+
+.recipe-card{
+    background-color: #F59133;
+    border: 5px solid #9F6126;
+    border-radius: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 50px 100px;
+}
+
+.box-background{
+    background-color: #F3E7B7; 
+    border-radius: 20px;
+    padding: 15px;
+    margin: 10px;
+    flex: 1;   
+}
+
+.food_picture{
+    height: 500px;
+    width: 500px;
+    border-radius: 30px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
