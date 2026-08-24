@@ -46,9 +46,8 @@ body{
     
 }
 /* The navigation menu links */
-.sidenav a {
+.button {
     background-color: #A04F34;
-    border-radius: 31.5px;
     border: 2px solid #683322;
     text-align: center;
     padding: 12px 20px;
@@ -57,20 +56,30 @@ body{
     color: white;
     display: block;
     margin: 50px 0;
+    border-radius: 31.5px;
 }
 
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
+.button:hover {
     color:#000000;
     background-color:  #F3E7B7;
     border: 2px solid #B5AD8C;
+}
+/* while your in a page navigation links, change their color */
+.active-button {
+    color:#000000;
+    background-color:  #F3E7B7;
+    border: 2px solid #B5AD8C;
+    text-align: center;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    display: block;
+    margin: 50px 0;
+    border-radius: 31.5px;
 }
 
-.sidenav a:focus {
-    color:#000000;
-    background-color:  #F3E7B7;
-    border: 2px solid #B5AD8C;
-}
 /* Style page content */
 .main{
     padding: 0px 10px;
