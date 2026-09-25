@@ -1,3 +1,4 @@
+/*formatting*/
 body{
     display: grid;
 /* Column 1 (Sidebar) is 200px wide. Column 2 (Main) takes the rest of the space (1fr) */
@@ -87,8 +88,10 @@ body{
     grid-row: 2;
 }
 
+
 .recipe-row{
     display: flex;
+
 }
 
 .recipe-card{
@@ -118,7 +121,7 @@ body{
     margin: 10px;
     flex: 1; 
 }
-
+/*Style for all food pics*/
 .food_picture{
     height: auto;
     width: 100%;
